@@ -1,0 +1,10 @@
+{
+  "tradeId": "TRADE12345",
+  "symbol": "NIFTY",
+  "exchange": "NFO",
+  "side": "SELL",
+  "quantity": 30,
+  "price": 15500.5,
+  "timestamp": 1727220050000,
+  "status": "COMPLETED"
+}

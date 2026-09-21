@@ -1,0 +1,10 @@
+{
+  "orderId": "ORD12345",
+  "symbol": "NIFTY",
+  "exchange": "NFO",
+  "side": "BUY",
+  "quantity": 50,
+  "orderType": "MARKET",
+  "timestamp": 1727220000000,
+  "status": "NEW"
+}
