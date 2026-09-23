@@ -4,11 +4,17 @@
   "description": "Low-Latency Copy-Trading POC",
   "main": "src/index.js",
   "type": "module",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.1"
+  },
   "scripts": {
     "start": "node src/index.js",
     "benchmark": "node benchmarks/benchmark.js",
     "test": "node --test",
-    "xts:test": "node src/index.js --mode=xts-test"
+    "xts:test": "node src/index.js --mode=xts-test",
+    "webhook:test": "node src/webhook/WebhookServer.js",
+    "webhook:benchmark": "node benchmarks/webhookBenchmark.js"
   },
   "keywords": [],
   "author": "",

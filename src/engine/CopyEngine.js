@@ -8,6 +8,12 @@ export class CopyEngine {
     this.processedEvents = new Set();
   }
 
+  /** Returns true if this eventId has already been processed. Does not mutate state. */
+  isDuplicate(tradeSignal) {
+    if (!tradeSignal || !tradeSignal.eventId) return false;
+    return this.processedEvents.has(tradeSignal.eventId);
+  }
+
   processSignal(tradeSignal) {
     // T2
     const copyEngineStart = processHrtimeBigint();
